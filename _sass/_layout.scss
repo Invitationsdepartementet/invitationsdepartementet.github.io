@@ -25,6 +25,13 @@
   line-height: 1.3em;
 }
 
+.section-header-center {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.3em;
+}
+
 @media all and (max-width: 600px) {
   .section-header {
       font-size: 28px;
@@ -88,7 +95,7 @@
   letter-spacing: 3px;
   position: absolute;
   top: 0;
-  right: 20px;
+  left: 20px;
   padding-top: inherit;
 }
 
@@ -122,6 +129,14 @@
 
 .icon-tictail {
   background-image: url('/images/tictail.png');
+}
+
+.login-button-wrapper {
+  letter-spacing: 3px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  padding-top: inherit;
 }
 
 .section-top {
@@ -232,16 +247,15 @@
   color: #666;
 }
 
-.destination-dropdown {
+.destination-input {
   border: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding: 16px 15px 16px 0;
+  padding: 16px 0;
   font-size: inherit;
   cursor: pointer;
   border-radius: inherit;
-  background: #fff url(/images/arrow-down.png) no-repeat 90% center/8px 6px;
 
   &::-ms-expand { /* For IE 11, hide arrow */
     display: none;
@@ -541,6 +555,26 @@
 .presentation img {
   max-width: 100%;
   height: auto;
+}
+
+.how-presentation {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+p.how-desc {
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+}
+
+p.how-text {
+  max-width: 200px;
+  text-align: center;
+  margin: auto;
 }
 
 @media all and (max-width: 750px) {
