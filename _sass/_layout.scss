@@ -237,11 +237,13 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding: 15px 0;
-  font-size: inherit;
+  padding: 12px 0;
+  font-size: 120%;
   cursor: pointer;
   border-radius: 3px;
-  min-width: 250px;
+  min-width: 150px;
+  text-align: center;
+  font-size: 120%;
 
   &::-ms-expand { /* For IE 11, hide arrow */
     display: none;
