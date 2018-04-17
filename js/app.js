@@ -12,6 +12,16 @@ $(function() {
     $(this).removeClass("video-overlay-active");
   });
 
+  $.getJSON("http://v1.invitationsdepartementet.se/api/regions/list", function( data ) {
+    var options = [];
+
+    $.each( data, function( key, val ) {
+      options.push( '<option value="' + key + '">' + val + '</option>' );
+    });
+
+    $("#regions").append(options.join(''));
+  });
+
   // Heatmap
   heatmap_ext = {
     altShiftH: false
