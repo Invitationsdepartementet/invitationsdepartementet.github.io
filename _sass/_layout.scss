@@ -132,7 +132,6 @@
 }
 
 .login-button-wrapper {
-  letter-spacing: 3px;
   position: absolute;
   top: 0;
   right: 20px;
@@ -243,6 +242,7 @@
   border-radius: 3px;
   min-width: 150px;
   text-align: center;
+  text-align-last: center;
   font-size: 120%;
 
   &::-ms-expand { /* For IE 11, hide arrow */
@@ -253,6 +253,7 @@
 .button-primary {
   background-color: $brand-color;
   color: #fff;
+  letter-spacing: 3px;
 
   &:hover {
     background-color: darken($brand-color, 3%);
