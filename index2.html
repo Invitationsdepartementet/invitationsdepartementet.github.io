@@ -26,9 +26,8 @@ layout: default
       <div class="section-top-controls">
         <form method="get" action="{{ site.url }}/signup">
           <div>
-            <select class="destination-input destination-dropdown" name="region_id">
+            <select id="regions" class="destination-input destination-dropdown" name="region_id">
               <option>Välj ort</option>
-              <option value="1">Test</option>
             </select>
 
             <button type="submit" class="button button-primary">Gå med idag</button>
@@ -218,7 +217,13 @@ layout: default
 <script>
 $(function() {
   $.getJSON("http://v1.invitationsdepartementet.se/api/regions", function( data ) {
-    console.log(data);
+    var options = [];
+
+    $.each( data, function( key, val ) {
+      options.push( '<option value="' + key + '">' + val + '</option>' );
+    });
+
+    $("#regions").append(options.join(''));
   });
 });
 </script>
