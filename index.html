@@ -26,11 +26,11 @@ layout: default
       <div class="section-top-controls">
         <form method="get" action="{{ site.url }}/signup">
           <div>
-            <select id="regions" class="destination-input destination-dropdown" name="region_id">
+            <select id="regions" class="destination-input destination-dropdown" name="region">
               <option>Välj ort</option>
             </select>
 
-            <button type="submit" class="button button-primary destination-submit-button">Gå med idag</button>
+            <a href="#" class="button button-primary" onclick="$(this).closest('form').submit()">Gå med idag</a>
           </div>
         </form>
       </div>

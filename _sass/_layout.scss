@@ -236,7 +236,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding: 12px 0;
+  padding: 15px 0;
   font-size: 120%;
   cursor: pointer;
   border-radius: 3px;
@@ -248,11 +248,6 @@
   &::-ms-expand { /* For IE 11, hide arrow */
     display: none;
   }
-}
-
-.destination-submit-button {
-  border-style: solid;
-  border-color: $brand-color;
 }
 
 .button-primary {
