@@ -26,12 +26,10 @@ layout: default
       <div class="section-top-controls">
         <form method="get" action="{{ site.url }}/signup">
           <div>
-            <div class="destination-wrapper">
-              <select class="destination-input destination-dropdown" name="region_id">
-                <option>Välj ort</option>
-                <option value="1">Test</option>
-              </select>
-            </div>
+            <select class="destination-input destination-dropdown" name="region_id">
+              <option>Välj ort</option>
+              <option value="1">Test</option>
+            </select>
 
             <button type="submit" class="button button-primary">Gå med idag</button>
           </div>
@@ -216,3 +214,11 @@ layout: default
   </div>
 
 </div>
+
+<script>
+$(function() {
+  $.getJSON("http://v1.invitationsdepartementet.se/api/regions", function( data ) {
+    console.log(data);
+  });
+});
+</script>
