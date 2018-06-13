@@ -12,7 +12,7 @@ $(function() {
     $(this).removeClass("video-overlay-active");
   });
 
-  $.getJSON("http://v1.invitationsdepartementet.se/api/regions/list", function( data ) {
+  $.getJSON("https://v1.invitationsdepartementet.se/api/regions/list", function( data ) {
     var options = [];
 
     $.each( data, function( key, val ) {
