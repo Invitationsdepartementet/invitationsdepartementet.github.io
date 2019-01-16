@@ -7,7 +7,7 @@
 
 # Site settings
 title: Invitationsdepartementet
-email: ebba@invitationsdepartementet.se
+email: helene@invitationsdepartementet.se
 description: "Äta mat på kvällen och prata svenska."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://v1.invitationsdepartementet.se"
